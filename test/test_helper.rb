@@ -14,4 +14,10 @@ class ActiveSupport::TestCase
       "#{string} | Ruby on Rails Tutorial Sample App"
     end
   end
+
+  
+  # Returns true if a test user is logged in.
+  def is_logged_in?
+    !session[:user_id].nil?
+  end
 end
